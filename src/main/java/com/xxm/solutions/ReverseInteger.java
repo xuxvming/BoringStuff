@@ -1,8 +1,15 @@
-public class reverseInteger {
+package com.xxm.solutions;
 
-}
-class reverseIntegerSolution {
+import com.xxm.solutionhelpers.AbstractSolution;
+
+public class ReverseInteger extends AbstractSolution {
+
+    public ReverseInteger(String questionName, String url) {
+        super(questionName, url);
+    }
+
     public int reverse(int x) {
+
         boolean isNegative = false;
         if (x < 0){
             isNegative = true;
@@ -24,5 +31,8 @@ class reverseIntegerSolution {
             return res;
         }
     }
-}
 
+
+
+
+}
