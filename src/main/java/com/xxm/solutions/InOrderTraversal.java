@@ -1,8 +1,8 @@
 package com.xxm.solutions;
 
 import com.xxm.solutionhelpers.AbstractSolution;
+import com.xxm.solutionhelpers.TreeNode;
 
-import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -32,10 +32,4 @@ public class InOrderTraversal extends AbstractSolution {
         }
         return res;
     }
-
-    public class TreeNode {
-     int val;
-     TreeNode left;
-     TreeNode right;
-     TreeNode(int x) { val = x; }}
 }

@@ -2,6 +2,7 @@ package solutions;
 
 import com.xxm.solutionhelpers.AbstractSolution;
 import com.xxm.solutionhelpers.SolutionFactory;
+import com.xxm.solutions.SingleNumber;
 import com.xxm.solutions.TwoSum;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,6 +34,17 @@ public class SolutionTests {
         }
         assertEquals(2,res[0]);
         assertEquals(5,res[1]);
+    }
+
+    @Test
+    public void testSingleNumber() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+        String url = "https://leetcode.com/problems/single-number/";
+        int[] nums = {1,1,2,2,3};
+        factory = new SolutionFactory(url);
+        AbstractSolution solution = factory.findSolution();
+        if (solution instanceof SingleNumber){
+            ((SingleNumber) solution).singleNumber(nums);
+        }
     }
 
 
